@@ -1,0 +1,1016 @@
+/* ==========================================================
+   RESET GERAL
+========================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scroll suave */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        #f8f9fb,
+        #eef4fb,
+        #ffffff
+    );
+
+    color: #333;
+
+    overflow-x: hidden;
+
+}
+
+img{
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+section{
+
+    padding: 90px 10%;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 9%;
+
+    z-index: 9999;
+
+    transition: .4s;
+
+    background: rgba(18, 60, 105, 0.82);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.logo h1{
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.1rem;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+nav{
+
+    display: flex;
+
+    gap: 45px;
+
+}
+
+nav a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    position: relative;
+
+    transition: .3s;
+
+}
+
+nav a::after{
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -6px;
+
+    left: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #D72638;
+
+    transition: .35s;
+
+}
+
+nav a:hover::after{
+
+    width: 100%;
+
+}
+
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
+.titulo{
+
+    padding-top: 160px;
+
+    padding-bottom: 70px;
+
+    text-align: center;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2B5D8E 0%,
+        #3F74A8 55%,
+        #6A98C3 100%
+    ),
+
+    url("images/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.titulo span{
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+
+}
+
+.titulo h1{
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 60px;
+
+    margin: 20px 0;
+
+}
+
+.titulo p{
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================================
+   APRESENTAÇÃO
+========================================================== */
+
+.apresentacao{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+/* ==========================================================
+   FOTO
+========================================================== */
+
+.foto img{
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+
+    transition: .4s;
+
+}
+
+.foto img:hover{
+
+    transform: scale(1.02);
+
+}
+
+/* ==========================================================
+   DESCRIÇÃO
+========================================================== */
+
+.descricao h2{
+
+    font-family: 'Playfair Display', serif;
+
+    color: #0B4F8C;
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+}
+
+.descricao p{
+
+    line-height: 2;
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+/* ==========================================================
+   INFORMAÇÕES
+========================================================== */
+
+.informacoes{
+
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+
+}
+
+.info{
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.info:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.info i{
+
+    font-size: 28px;
+
+    color: #D72638;
+
+}
+
+.info h4{
+
+    color: #0B4F8C;
+
+    margin-bottom: 5px;
+
+}
+
+.info p{
+
+    margin: 0;
+
+    color: #666;
+
+}
+
+/* ==========================================================
+   HISTÓRIA
+========================================================== */
+
+.historia{
+
+    background: white;
+
+}
+
+.historia h2{
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    color: #0B4F8C;
+
+    font-size: 46px;
+
+    margin-bottom: 40px;
+
+    position: relative;
+
+}
+
+.historia h2::after{
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 4px;
+
+    background: #D72638;
+
+    margin: 18px auto;
+
+    border-radius: 30px;
+
+}
+
+.historia p{
+
+    max-width: 1000px;
+
+    margin: 0 auto 25px;
+
+    line-height: 2;
+
+    color: #555;
+
+    text-align: justify;
+
+    font-size: 17px;
+
+}
+
+/* ==========================================================
+   MAPA
+========================================================== */
+
+.mapa{
+
+    background:#eef4fb;
+
+    text-align:center;
+
+}
+
+.mapa h2{
+
+    font-family:'Playfair Display', serif;
+
+    color:#0B4F8C;
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+}
+
+.mapa h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#D72638;
+
+    margin:18px auto;
+
+    border-radius:30px;
+
+}
+
+.mapa p{
+
+    color:#666;
+
+    margin-bottom:40px;
+
+    font-size:17px;
+
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================================================
+   GALERIA
+========================================================== */
+
+.galeria{
+
+    background:white;
+
+}
+
+.galeria h2{
+
+    text-align:center;
+
+    font-family:'Playfair Display', serif;
+
+    color:#0B4F8C;
+
+    font-size:46px;
+
+    margin-bottom:50px;
+
+}
+
+.galeria h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#D72638;
+
+    margin:18px auto;
+
+    border-radius:30px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.grid img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.grid img:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+/* ==========================================================
+   CURIOSIDADES
+========================================================== */
+
+.curiosidades{
+
+    background:#eef4fb;
+
+}
+
+.curiosidades h2{
+
+    text-align:center;
+
+    font-family:'Playfair Display', serif;
+
+    color:#0B4F8C;
+
+    font-size:46px;
+
+    margin-bottom:50px;
+
+}
+
+.curiosidades h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#D72638;
+
+    margin:18px auto;
+
+    border-radius:30px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+    font-size:40px;
+
+    color:#D72638;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    color:#0B4F8C;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   BOTÃO VOLTAR
+========================================================== */
+
+.voltar{
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.botao{
+
+    display:inline-block;
+
+    background:#D72638;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.botao:hover{
+
+    background:#b41d2b;
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ==========================================================
+   RODAPÉ
+========================================================== */
+
+footer{
+
+    background:#0B4F8C;
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:40px;
+
+    padding:70px 10%;
+
+}
+
+.footer-logo h2{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo p{
+
+    color:#dfe7ef;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links h3,
+.footer-contato h3{
+
+    margin-bottom:20px;
+
+}
+
+.footer-links a{
+
+    color:#dfe7ef;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:white;
+
+    padding-left:8px;
+
+}
+
+.footer-contato p{
+
+    color:#dfe7ef;
+
+    margin-bottom:10px;
+
+}
+
+
+/* ==========================================================
+   ACABAMENTOS
+========================================================== */
+
+::selection{
+
+    background:#D72638;
+
+    color:white;
+
+}
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef4fb;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#D72638;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#b41d2b;
+
+}
+
+
+/* Navbar quando rolar */
+
+section{
+
+    scroll-margin-top:100px;
+
+}
+
+header.ativo{
+
+    background: rgba(11,79,140,.97);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.20);
+
+}
+
+
+/* ==========================================================
+   BOTÃO COM BRILHO
+========================================================== */
+
+.botao{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.botao::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-130%;
+
+    width:70%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+.botao:hover::before{
+
+    left:160%;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+@media(max-width:1100px){
+
+    .apresentacao{
+
+        grid-template-columns:1fr;
+
+    }
+
+    footer{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .titulo h1{
+
+        font-size:42px;
+
+    }
+
+    .titulo p{
+
+        font-size:17px;
+
+    }
+
+    .informacoes{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    section{
+
+        padding:70px 7%;
+
+    }
+
+    .titulo{
+
+        padding-top:150px;
+
+    }
+
+    .titulo h1{
+
+        font-size:34px;
+
+    }
+
+    .descricao h2,
+    .historia h2,
+    .mapa h2,
+    .galeria h2,
+    .curiosidades h2{
+
+        font-size:34px;
+
+    }
+
+    .botao{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
+
+.hero::before,
+.titulo::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(10,35,60,.30),
+        rgba(10,35,60,.18),
+        rgba(10,35,60,.35)
+    );
+
+}
+
+.hero,
+.titulo{
+    position: relative;
+}
+
+.hero-texto,
+.titulo > *{
+    position: relative;
+    z-index: 2;
+}
