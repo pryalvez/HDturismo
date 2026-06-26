@@ -1,4 +1,4 @@
-🌐 Acesse o projeto: https://seuusuario.github.io/hd-turismo
+🌐 Acesse o projeto: (https://pryalvez.github.io/HDturismo/)
 
 # HD Turismo
 
