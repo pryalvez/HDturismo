@@ -545,6 +545,26 @@ nav a:hover::after{
 
 }
 
+.img3{
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    transition: .4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    object-position: -300px; 
+
+}
+
 
 /* ==========================================================
    CURIOSIDADES
